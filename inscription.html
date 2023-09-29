@@ -42,7 +42,7 @@
 
 
 				<label for="password">Mot de passe*</label>
-				<input id="password" name="password" type="password" tabindex="6" pattern="[1-ù]{8,}"
+				<input id="password" name="password" type="password" tabindex="6" pattern="[!-z]{8,}"
 					oninvalid="alert('Password can only contain latin and numerical chars and must be at least 8 chars')"
 					required>
 				<br>
