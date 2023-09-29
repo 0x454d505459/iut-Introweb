@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<title>OGER--MASSICOT Gabriel</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+	<header>
+		<!-- utiliser blockquote ici  -->
+		<nav>
+			<ul>
+				<li><a href="historique.html">Accueil</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="#">Inscription</a></li>
+			</ul>
+		</nav>
+		<blockquote id="quote">
+			<p>Internet : un réseau international gigantesque, composé de passionnés d'ordinateur, ce qui pour moi signifie
+				"des
+				gens qui n'ont pas d'existence".</p><br>
+			<cite>Dave Barry</cite>
+		</blockquote>
+	</header>
+	<main>
+		<form action="sendToMySecondWebCourse.php" method="get">
+			<fieldset>
+				<legend>Données personnelles</legend>
+				<label for="surname">Surnom</label>
+				<input id="surname" name="surname" type="text" tabindex="1">
+				<br>
+
+				<label for="firstname">Nom*</label>
+				<input id="firstname" name="firstname" type="text" tabindex="7" required>
+				<br>
+
+				<label for="prenom">Prénom</label>
+				<input id="prenom" name="name" type="text" tabindex="9">
+				<br>
+
+
+				<label for="password">Mot de passe*</label>
+				<input id="password" name="password" type="password" tabindex="6" pattern="[1-ù]{8,}"
+					oninvalid="alert('Password can only contain latin and numerical chars and must be at least 8 chars')"
+					required>
+				<br>
+
+
+				<label for="genre">Genre</label>
+				<select name="genre" id="genre">
+					<option value="Femme">Femme</option>
+					<option value="Homme">Homme</option>
+					<option value="Non binaire">Non binaire</option>
+					<option value="transfem">Transfem</option>
+					<option value="transpecies">Transpecicies</option>
+					<option value="genderfluid">Genderfluid</option>
+					<option value="genderflux">Genderflux</option>
+					<option value="transmac">Transmasc</option>
+					<option value="adb">ADB</option>
+					<option value="plaque_de_cuisson_connectee">Plaque de cuisson connecté</option>
+					<option value="google_home">Google home</option>
+					<option value="sata">Controlleur S.A.T.A</option>
+					<option value="dmitri">Dmitri</option>
+				</select>
+				<br>
+
+				<label for="birthdate">Année de naissance</label>
+				<input name="birthdate" id="birthdate" type="date" tabindex="5">
+				<br>
+				<label for="email">Email*</label>
+				<input name="email" placeholder="yourmail@domain.com" id="email" type="email" tabindex="10" required>
+				<br>
+				<label for="origine">Pays d'origine</label>
+				<select name="origine" id="origine" tabindex="12">
+					<option value="fr">France</option>
+					<option value="rr">Russie</option>
+					<option value="us">USA</option>
+					<option value="de">Allemagne</option>
+					<option value="pl">Pologne</option>
+					<option value="gs">Google store</option>
+					<option value="af">Afrique</option>
+					<option value="dm">République Démocratique de Monin</option>
+					<option value="ch">Discord</option>
+				</select>
+				<br>
+
+			</fieldset>
+
+			<fieldset>
+				<legend>Internet skills</legend>
+				<label for="lvl">Niveau en développement Web</label>
+				<input name="lvl" id="lvl" type="number" min="0" max="5" tabindex="4">
+				<br>
+
+				<label for="language">Language préféré</label>
+				<select name="language" id="language" tabindex="11">
+					<option value="nim">Nim</option>
+					<option value="zig">Zig</option>
+					<option value="nasm">NASM</option>
+					<option value="bdsm">BDSM</option>
+					<option value="swirl">Swirl</option>
+					<option value="js">JavaScript</option>
+					<option value="dimitrijs">DimitriJS</option>
+					<option value="cpp">C++</option>
+					<option value="cmm">C--</option>
+					<option value="hc">HolyC</option>
+					<option value="rs">Rust</option>
+					<option value="emcs">ECMASCRIPT</option>
+					<option value="cms">CommonJS</option>
+					<option value="dt">Dart</option>
+					<option value="kt">Kotlin</option>
+					<option value="lua">Lua</option>
+					<option value="cr">Crystal</option>
+					<option value="cs">MS Java</option>
+					<option value="bf">BrainFuck</option>
+					<option value="julia">Julia</option>
+					<option value="jsf">JSFuck</option>
+					<option value="pz">Pizza</option>
+				</select>
+			</fieldset>
+			<br>
+
+			<label for="clauses">J'ai bien lu les clause que je n'ai pas lues*</label>
+			<input name="clauses" id="clauses" type="checkbox" tabindex="2" required>
+			<br>
+
+			<label for="newsletter">Je désire recevoir la newsletter</label>
+			<input name="newsletter" id="newsletter" type="checkbox" checked tabindex="1">
+			<br>
+			<label for="remarques">Remarques sur le site</label>
+			<textarea tabindex="6" id="remarques"></textarea>
+			<br>
+			<input type="submit" value="Envoyer" tabindex="3">
+
+		</form>
+
+	</main>
+	<footer><a href="#">Retour au début</a></footer>
+</body>
+
+</html>
